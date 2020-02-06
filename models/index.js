@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 
-mongoose.connect('mongodb+srv://root:root@cluster0-1hntq.mongodb.net/exam?retryWrites=true&w=majority',
+mongoose.connect('mongodb://localhost:27017/cakedb',
 { useNewUrlParser: true,
   useUnifiedTopology: true })
 .then(() => console.log('Connexion à MongoDB réussie !'))
